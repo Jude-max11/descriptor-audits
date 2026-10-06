@@ -1,0 +1,42 @@
+{
+  "M_values": [16, 64, 256],
+  "delta_values": [0.25, 1.0, 4.0],
+  "primary_M": 128,
+  "primary_delta": 1.0,
+  "alpha_points": 121,
+  "alpha_margin": 1.5,
+  "finite_sample": {
+    "M": 64,
+    "delta": 0.1,
+    "sigma": 1.0,
+    "sample_sizes": [1, 5, 25, 125]
+  },
+  "monte_carlo_finite": {
+    "M": 64,
+    "delta": 0.1,
+    "sigma": 1.0,
+    "sample_sizes": [5, 25, 125],
+    "alpha_points": 25,
+    "trials": 60000
+  },
+  "sensitivity": {
+    "baseline": {"M": 64, "delta": 0.1, "sigma": 1.0, "n": 25},
+    "values": {
+      "M": [16, 64, 256],
+      "delta": [0.05, 0.1, 0.2],
+      "sigma": [0.5, 1.0, 2.0],
+      "n": [5, 25, 125]
+    },
+    "alpha_fraction": 0.5,
+    "trials": 100000
+  },
+  "priors": [
+    {"name": "uniform", "kind": "uniform"},
+    {"name": "zipf_0.5", "kind": "zipf", "exponent": 0.5},
+    {"name": "zipf_1.0", "kind": "zipf", "exponent": 1.0},
+    {"name": "zipf_2.0", "kind": "zipf", "exponent": 2.0},
+    {"name": "head_0.8", "kind": "head_tail", "head_mass": 0.8}
+  ],
+  "monte_carlo_samples": 200000,
+  "seed": 20260730
+}

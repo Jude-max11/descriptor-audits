@@ -1,0 +1,58 @@
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.eggs/
+
+# ===== Virtual environments =====
+venv/
+.venv/
+env/
+.env
+
+# ===== IDE / editor =====
+.idea/
+.vscode/
+*.swp
+
+# ===== Experiment artifacts (do not commit) =====
+checkpoints/
+ckpt/
+logs/
+wandb/
+outputs/
+results/
+runs/
+*.pt
+*.pth
+*.ckpt
+*.onnx
+
+# ===== Data (do not commit — download links in README) =====
+data/raw/
+data/processed/
+data/ml-1m/
+data/ml-100k/
+data/book_crossing/
+*.csv
+*.tsv
+*.json.gz
+*.zip
+*.tar
+*.tar.gz
+
+# ===== OS junk =====
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ===== Jupyter =====
+.ipynb_checkpoints/
+
+# ===== Local-only notes (may contain private info) =====
+*.local.*
+notes/
+todo.md
+secrets.env
